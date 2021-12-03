@@ -1,0 +1,31 @@
+[strings]
+# Mode : train, test, serve
+mode = train
+# 训练集地址路径
+train_data= train_data
+# 训练集原始文件
+resource_data = train_data/filename.conv
+# 处理后的数据集文件
+seq_data = train_data/seq.data
+# 算法模型文件 algorithm
+model_path = algo
+# 生成的模型文件地址路径
+model_data = model_data
+# 读取识别原始文件中段落和行头的标示
+e = E
+m = M
+
+[ints]
+# vocabulary size
+# 20,000 is a reasonable size
+enc_vocab_size = 20000
+dec_vocab_size = 20000
+embedding_dim= 128
+
+# typical options : 128, 256, 512, 1024
+layer_size = 256
+# dataset size limit; typically none : no limit
+max_train_data_size = 50000
+batch_size = 128
+
+

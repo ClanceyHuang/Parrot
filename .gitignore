@@ -127,3 +127,10 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Parrot
+model_data/*
+!model_data/.gitkeep
+train_data/*
+!train_data/.gitkeep
+config.ini
